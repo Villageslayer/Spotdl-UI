@@ -31,7 +31,7 @@ echo        ______\//\\\_______\/\\\__/\\\\\\\\\__/\\\\\\\\\_\//\\\\\\\\/\\_\//\
 echo         _______\///________\///__\/////////__\/////////___\////////\//___\////////_____\//////////__\//////////__\/////////___\////////\//___\////__________\//////////__\///______________________________ 
 
 
-setlocal				# explorer picker
+setlocal				
 
 set "psCommand="(new-object -COM 'Shell.Application')^
 .BrowseForFolder(0,'Please choose a folder.',0,0).self.path""
@@ -43,7 +43,7 @@ echo You chose !folder!
 endlocal
 cd "%folder%"
 print "%folder&%
-set /p Link=Input spotify link:											#Link input
+set /p Link=Input spotify link:											
 cls 
 
 echo _________________________/\\\\\\\\\\\____/\\\\\\\\\\\\\_________/\\\\\_______/\\\\\\\\\\\\\\\__/\\\\\\\\\\\\_____/\\\___________________________________________                                           
